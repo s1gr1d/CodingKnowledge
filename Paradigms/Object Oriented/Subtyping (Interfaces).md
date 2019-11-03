@@ -1,4 +1,4 @@
-# Interfaces und Subtyping
+# Subtyping (Interfaces)
 
 *Deutsch: Schnittstellen(typen) und Untertypenbeziehung*
 
