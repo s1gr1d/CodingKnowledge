@@ -1,6 +1,12 @@
 # Subtyping (Interfaces)
 
-*Deutsch: Schnittstellen(typen) und Untertypenbeziehung*
+*Deutsch: Untertypenbeziehung*
+
+> Typ B wird als Subtyp vom Typ A bezeichnet, wenn eine Instanz von B in jeder Situation verwendet werden kann, in der eine Instanz von A erforderlich ist.
+
+Aufgrund dessen, ist die **Ersetzbarkeit** von Typen gegeben.
+
+------
 
 In Java gibt es zwei Möglichkeiten, Typen zu deklarieren
 - Class (Klassentypen)
@@ -67,7 +73,7 @@ Die Implementierung kann in Subklassen spezialisiert werden. Durch Vererbung von
 
 
 
-## Subtyping
+### Dynamische Bindung in Subtyping
 
 ```java
 class PrintWithCount{
@@ -87,8 +93,31 @@ Aufgrund von **dynamischer Bindung** wird jeweils die Methode des Subtyps aufger
 
 Zur Compiletime (Übersetzungszeit) ist nicht sicher, welcher Programmcode ausgeführt wird. Das kann erst zur Runtime (Laufzeit) des Programms bestimmt werden.
 
-##### Subtyping zusammengefasst
 
-> Typ B wird als Subtyp vom Typ A bezeichnet, wenn eine Instanz von B in jeder Situation verwendet werden kann, in der eine Instanz von A erforderlich ist.
 
-- erlaubt es, gemeinsame Eigenschaften unterschiedlicher Typen in Form eines allgemeinen Typs auszudrücken
+# Interitance
+
+*Deutsch: Vererbung*
+
+Vererbung bedeutet, dass eine Klasse Programmteile von einer anderen übernimmt bzw eine neue Klasse durch Abänderung einer bestehenden Klasse entsteht.
+
+In Java ist Vererbung immer mit Subtyping verbunden. Einziges Unterscheidungsmerkmal: Sind Zusicherungen zwischen Unter- und Oberklasse kompatibel.
+
+
+
+# Inheritance vs Subtyping
+
+**Subtyping bezieht sich auf die Kompatibilität von Schnittstellen.** Ein Typ B ist ein Subtyp von A, wenn jede Funktion, die auf einem Objekt vom Typ A aufgerufen werden kann, auch auf einem Objekt vom Typ B aufgerufen werden kann.
+
+**Inheritance bezieht sich auf die Wiederverwendung von Implementierungen.** Ein Typ B erbt von einem anderen Typ A, wenn einige Funktionen für B in Bezug auf die Funktionen von A geschrieben werden. 
+
+------
+
+##### Beispiel
+
+Ein Verwandter ist leider gestorben und hat dir seine Buchhandlung hinterlassen.
+
+Du kannst jetzt alle Bücher dort lesen, sie verkaufen, du kannst dir seine Konten, seine Kundenliste usw. ansehen. **Das ist Inheritance** - du hast alles, was der Verwandte hatte. Inheritance ist eine Form der Wiederverwendung von Code.
+
+Du kannst den Buchladen auch selbst wieder eröffnen und alle Rollen und Verantwortlichkeiten des Verwandten übernehmen, auch wenn Sie einige eigene Änderungen vornehmen - **das ist Subtyping** - du bist jetzt Buchhändler, genau wie dein Verwandter früher. 
+
