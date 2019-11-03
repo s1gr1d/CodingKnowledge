@@ -89,4 +89,6 @@ Zur Compiletime (Übersetzungszeit) ist nicht sicher, welcher Programmcode ausge
 
 ##### Subtyping zusammengefasst
 
+> Typ B wird als Subtyp vom Typ A bezeichnet, wenn eine Instanz von B in jeder Situation verwendet werden kann, in der eine Instanz von A erforderlich ist.
+
 - erlaubt es, gemeinsame Eigenschaften unterschiedlicher Typen in Form eines allgemeinen Typs auszudrücken
